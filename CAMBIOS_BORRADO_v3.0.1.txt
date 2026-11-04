@@ -1,0 +1,14 @@
+GESTIÓN ACADÉMICA — AJUSTES v3.0.1
+
+1. Eliminación de clases individuales desde Horario.
+   La clase se quita, pero no se eliminan ni materias ni tareas.
+2. Eliminación en cascada de materias: se explica cuántas clases, tareas y evaluaciones
+   (con sus notas) quedan asociadas y se eliminan tras confirmar.
+3. Se reemplazó el antiguo botón de restaurar las muestras por Borrar todos los datos.
+   Dos confirmaciones; borra perfil y preferencias además de todos los datos académicos.
+4. Regreso a la bienvenida con estado vacío persistente, incluso al recargar la página.
+5. Se conservó el escudo UNAN-León y el diseño de todas las pantallas.
+6. Se actualizó la versión de caché para que el navegador detecte el nuevo JavaScript.
+
+NOTA: Borrar todos los datos limpia lo guardado por esta aplicación en el navegador
+actual. No afecta copias JSON exportadas ni otros navegadores/dispositivos.

@@ -1,0 +1,29 @@
+GESTIÓN ACADÉMICA UNAN-LEÓN — ENTREGA 3.0.2
+
+CAMBIOS RESPECTO A 3.0.1
+- Perfil y ajustes > Cuenta > Cerrar sesión.
+- Confirmación de salida con la indicación de que no se eliminan datos.
+- Regreso a Bienvenida, sin conservar navegación anterior.
+- Al volver a entrar, se mantiene perfil, materias, clases, tareas, evaluaciones, alertas y preferencias.
+- Avisos del navegador suspendidos mientras no se ha entrado a la app en esa visita.
+- Borrado completo: también deja la sesión cerrada y el estado vacío persistente.
+- Caché del servicio offline actualizada a v3.0.2; corrección de respuesta alternativa para archivos estáticos.
+- Corrección al abrir «Registrar resultado» en una evaluación: si se cancela, la evaluación mantiene su estado anterior.
+- Diseño y escudo de la versión 3.0.1 conservados.
+
+ALCANCE IMPORTANTE
+Esta es una aplicación web de almacenamiento LOCAL, sin credenciales ni servidor de cuentas.
+«Cerrar sesión» finaliza el acceso a las pantallas de esta visita y devuelve a Bienvenida;
+NO es un mecanismo de autenticación ni impide que alguien con acceso al navegador
+vuelva a entrar. No elimina datos, salvo si se usa «Borrar todos los datos».
+
+PARA ACTUALIZAR GITHUB
+Sube los archivos modificados index.html, app-v3.js, styles-v3.css, service-worker.js
+y este registro. Conserva assets/crest_unan.png.
+
+PRUEBAS A REALIZAR
+1. Entrar > Perfil > Cerrar sesión > Cancelar (continuar en perfil).
+2. Cerrar sesión > Confirmar (regresar a Bienvenida).
+3. Entrar de nuevo (perfil y datos conservados).
+4. Exportar e importar respaldo; borrar todo (confirmación doble).
+5. Crear materia, clase y tarea; eliminar clase y materia con sus registros.
